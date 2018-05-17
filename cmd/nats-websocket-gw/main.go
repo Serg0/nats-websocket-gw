@@ -15,6 +15,8 @@ func usage() {
 }
 
 func main() {
+
+    fmt.Printf(`NATS_HOST: %s `, os.Getenv("NATS_HOST"))
 	settings := gw.Settings{
 		NatsAddr: os.Getenv("NATS_HOST"),
 	}
