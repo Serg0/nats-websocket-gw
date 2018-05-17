@@ -16,7 +16,7 @@ func usage() {
 
 func main() {
 	settings := gw.Settings{
-		NatsAddr: "localhost:4222",
+		NatsAddr: os.Getenv("NATS_HOST"),
 	}
 
 	for _, arg := range os.Args[1:] {

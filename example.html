@@ -6,7 +6,7 @@
     </head>
     <body>
         <script type="text/javascript">
-            var nats = NATS.connect('ws://localhost:8910/nats');
+            var nats = NATS.connect('ws://localhost:4223/nats');
 
             // Simple Subscriber
             nats.subscribe('foo', function(msg) {
