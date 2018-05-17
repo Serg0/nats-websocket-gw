@@ -1,7 +1,7 @@
 # NATS <-> websocket gateway
 
 A websocket gateway for NATS, usable as a backend for
-[elm-nats](https://github.com/orus-io/elm-nats) and
+[elm-nats](https://github.com/Serg0/elm-nats) and
 [websocket-nats](https://github.com/isobit/websocket-nats).
 
 Features:
@@ -17,13 +17,13 @@ Features:
 Fetch the source:
 
 ```bash
-go get -u github.com/orus-io/nats-websocket-gw
+go get -u github.com/Serg0/nats-websocket-gw
 ```
 
 Install and run the default binary
 
 ```bash
-go install github.com/orus-io/nats-websocket-gw/cmd/nats-websocket-gw
+go install github.com/Serg0/nats-websocket-gw/cmd/nats-websocket-gw
 nats-websocket-gw --no-origin-check
 ```
 
@@ -35,7 +35,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/orus-io/nats-websocket-gw"
+	"github.com/Serg0/nats-websocket-gw"
 )
 
 func main() {
